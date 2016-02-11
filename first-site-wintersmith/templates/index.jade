@@ -2,26 +2,24 @@
 extends layout
 
 block content
-  include author
-  each article in articles
-    article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
-        if article.intro.length > 0
-          != typogr(article.intro).typogrify()
-        if article.hasMore
-          p.more
-            a(href=article.url) more
+  div.profile-content.section-white
+    div.container
+      div.row.owner
+        div.col-md-2.col-md-offset-5.col-sm-4.col-sm-offset-4.col-xs-6.col-xs-offset-3.text-center
+          div.avatar
+            img(src=contents['GalvanizeHeadshot-220_cropped.jpg'].url, alt="Circle Image").img-circle.img-no-padding.img-responsive
+        div.row
+          div.col-md-6.col-md-offset-3.text-center
+            div.name
+            h4 Saundie Weiss
+            h5 Full Stack Developer
+            p I am a student in the Full Stack program at Galvanize Fort Collins. My interest in code began when I was working as a copywriter writing for websites and event communications at a high-tech B2B marketing agency.  I am creative, curious, and passionate about learning. I like understanding programming concepts from the top-down, so I learn by reading and immersing myself in code. As a developer, I enjoy working on the backend. I am looking for a company that values high-quality work and individual growth.
 
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href='/archive.html') « Archives
-    if nextPage
-      a(href=nextPage.url) Next page »
+            a(href='https://github.com/saundie184').btn.btn-simple
+              i.fa.fa-github.fa-2x
+            a(href='https://www.linkedin.com/in/saundieweiss').btn.btn-simple
+              i.fa.fa-linkedin.fa-2x
+            a(href='mailto:saundieweiss@gmail.com').btn.btn-simple
+              i.fa.fa-at.fa-2x
+            a(href='#').btn.btn-simple
+              i.fa.fa-file-text.fa-2x

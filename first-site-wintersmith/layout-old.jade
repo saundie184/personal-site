@@ -21,21 +21,25 @@ html(lang='en')
       link(href='https://fonts.googleapis.com/css?family=Work+Sans:400,500', rel='stylesheet', type='text/css')
       link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
       link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300', rel='stylesheet', type='text/css')
-
-  body
-    nav.navbar.navbar-relative.navbar-ct-primary#register-navbar
-      div.container
-        div.navbar-header
-          a.navbar-brand.active-page(href=) Saundie Weiss
-        div.collapse.navbar-collapse#idnavigation-example-2
-          ul.nav.navbar-nav.navbar-right
-            li
-              a.btn.btn-simple(href=) Portfolio
-            li
-              a.btn.btn-simple(href=) Blog
-    div.wrapper
-    block content
-
-    footer.footer-demo.section-white
-      div.container
-        div.copyright.pull-right
+      
+  body(class=bodyclass)
+    header.header
+      div.content-wrap
+        block header
+          div.logo
+            h1
+              a(href=locals.url)= locals.name
+            p.description= locals.description
+    div#content
+      div.content-wrap
+        block content
+          h2 Welcome to zombocom!
+    footer
+      div.content-wrap
+        block footer
+          section.about
+            !=contents['about.md'].html
+          section.copy
+            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+              //- please leave the "powered by" if you use the design
