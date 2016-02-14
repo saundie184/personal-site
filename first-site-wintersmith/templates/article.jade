@@ -1,23 +1,9 @@
 
 extends layout
 
-block append vars
-  - bodyclass = 'article-detail'
-
-block prepend title
-  | #{ page.title + ' - '}
-
-block header
-  include author
-  h1= page.title
-  p.author
-    | #{ 'Written by ' }
-    mixin author(page.metadata.author)
-
-block content
-  article.article
-    section.content!= typogr(page.html).typogrify()
-
-block prepend footer
-  div.nav
-    a(href=contents.index.url) « Full blog
+div.container
+  div.row
+    div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      h4.post-title Post title
+      p.post-meta Posted on September 24, 2014
+        p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
