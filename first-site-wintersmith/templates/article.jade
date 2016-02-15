@@ -1,12 +1,11 @@
 
 extends layout
 
-div.container
-  div.row
-    div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-      block prepend title
-        | #{ page.title + ' - '}
-      h4.post-title Post title
-      block content
-      p.post-meta Posted on September 24, 2014
-        p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+block prepend title
+  | #{ page.title + ' - '}
+
+block content
+      h4.post-title= page.title
+        p.post-meta= page.date
+        p
+          section.content!= typogr(page.html).typogrify()

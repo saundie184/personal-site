@@ -13,14 +13,16 @@ Another new feature is the arrow notation. This is a new way to write functions.
 
 You can use the arrow notation like this:
 
-`function myCalc(){
+```
+function myCalc(){
   this.total = 0;
   let someArr = [1,2,3,4];
 
   someArr.forEach((item) => {
     this.total += item;
     });
-  }`
+  }
+  ```
 
 The feature that I'm most excited about is the `for...of` loop. This loop will iterate of "iterable objects" (MDN), which means that we can use it for objects **and** arrays. Before, we could only use the `for...in` loop to loop through objects.
 

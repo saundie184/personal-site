@@ -26,7 +26,7 @@ html(lang='en')
     nav.navbar.navbar-relative.navbar-ct-primary#register-navbar
       div.container
         div.navbar-header
-          a.navbar-brand.active-page(href=) Saundie Weiss
+          a.navbar-brand.active-page(href=locals.url) Saundie Weiss
         div.collapse.navbar-collapse#idnavigation-example-2
           ul.nav.navbar-nav.navbar-right
             li
@@ -34,7 +34,10 @@ html(lang='en')
             li
               a.btn.btn-simple(href=contents.articles.es6['index.md'].url) Blog
     div.wrapper
-    block content
+      div.container
+        div.row
+          div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+          block content
 
     footer.footer-demo.section-white
       div.container

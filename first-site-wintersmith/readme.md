@@ -1,4 +1,3 @@
 
 # Blog
-
-The default [wintersmith](https://github.com/jnordberg/wintersmith) template
+This is my website! It is built on [wintersmith](https://github.com/jnordberg/wintersmith)!
