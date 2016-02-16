@@ -10,6 +10,7 @@ html(lang='en')
       title
         block title
           = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       //     Stylesheets
       link(href=contents.css['bootstrap.css'].url, rel="stylesheet")
       link(href=contents.css['ct-paper.css'].url, rel="stylesheet")
