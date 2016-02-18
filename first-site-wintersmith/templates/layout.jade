@@ -29,11 +29,8 @@ html(lang='en')
         div.navbar-header
           a.navbar-brand.active-page(href=locals.url) Saundie Weiss
         div.collapse.navbar-collapse#idnavigation-example-2
-          ul.nav.navbar-nav.navbar-right
-            li
-              a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
-            li
-              a.btn.btn-simple(href=contents['blog.json'].url) Blog
+          block nav
+          
     div.wrapper
       div.container
         div.row

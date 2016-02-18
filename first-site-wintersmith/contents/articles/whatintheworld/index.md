@@ -5,7 +5,7 @@ date: 2015-11-25
 template: article.jade
 ---
 
-We completed our first project!
+My first project!
 
 This application is designed to engage middle school students in current news. They will be able to search for news stories by choosing their own search term. Stories are displayed with the newest items on the top. The publication date is also shown, so students can immediately see which stories were published today.
 

@@ -1,5 +1,12 @@
 extends layout
 
+block nav
+  ul.nav.navbar-nav.navbar-right
+    li
+      a.btn.btn-simple.active-page(href=contents['portfolio.json'].url) Portfolio
+    li
+      a.btn.btn-simple(href=contents['blog.json'].url) Blog
+
 block content
   div.container
     div.row
@@ -14,9 +21,9 @@ block content
           p.post-meta View screencast
         a(href="https://whatintheworld.firebaseapp.com/")
           img.img-thumbnail(src=contents['What in the World screenshot.png'].url)
+        hr
 
 block prepend footer
-  hr
   div.container
     div.modal-body
       a(href='https://github.com/saundie184').btn.btn-simple

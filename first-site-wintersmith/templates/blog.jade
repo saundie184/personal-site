@@ -1,5 +1,12 @@
 extends layout
 
+block nav
+  ul.nav.navbar-nav.navbar-right
+    li
+      a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
+    li
+      a.btn.btn-simple.active-page(href=contents['blog.json'].url) Blog
+
 block content
   div.container
     div.row
