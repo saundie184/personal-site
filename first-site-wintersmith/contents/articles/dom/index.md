@@ -7,6 +7,8 @@ template: article.jade
 
 Wow. It has been a very BUSY last two weeks. Almost everyday, we learn an entirely new concept. I’m going to be using this blog to document what I am learning. It’s going to be a crazy ride for sure, but it’s starting to get exciting.
 
+<span class="more"></span>
+
 We were introduced to the DOM, aka the “Document Object Model”. I had never heard of the DOM before this week, but I learned why it is so important to programming. We practiced using JavaScript (with the DOM) to build and style pages—no CSS.
 
 We also learned about event handlers in JavaScript. These add actions and behaviors to web pages. This is where things got really exciting for me. With event handlers, we can make real activity happen. Right now, I’m just adding click actions, but we worked on building a piano keyboard and toggling stoplight colors.

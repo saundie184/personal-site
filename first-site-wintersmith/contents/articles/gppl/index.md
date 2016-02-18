@@ -7,6 +7,8 @@ template: article.jade
 
 Before the holidays, we completed another project. This was a group project, and it was really cool to work with a team. We created Galvanize Ping Pong League (GPPL).
 
+<span class="more"></span>
+
 [You can view the application here.](https://galvanize-ping-pong-league.herokuapp.com/)
 
 [You can watch screencast demo here.](https://vimeo.com/149898674)

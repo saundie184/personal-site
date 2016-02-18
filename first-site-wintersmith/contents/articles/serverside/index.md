@@ -5,7 +5,11 @@ date: 2015-12-10
 template: article.jade
 ---
 
-We are now learning server side development! I have a feeling things are going to get exciting now. We started talking about Object-Oriented Programming (OOP) and pair-programming. OOP has four main concepts: Encapsulation, Abstraction, Inheritance, and Polymorphism. We spent a few days talking about these and saw examples of how they are used. In some of the exercises that we did, we had to identify which concept(s) were being used. It feels like just a lot of theory right now, but I think the more I work with JavaScript, the more I’ll understand these concepts.
+We are now learning server side development! I have a feeling things are going to get exciting now. We started talking about Object-Oriented Programming (OOP) and pair-programming.
+
+<span class="more"></span>
+
+OOP has four main concepts: Encapsulation, Abstraction, Inheritance, and Polymorphism. We spent a few days talking about these and saw examples of how they are used. In some of the exercises that we did, we had to identify which concept(s) were being used. It feels like just a lot of theory right now, but I think the more I work with JavaScript, the more I’ll understand these concepts.
 
 Here are my definitions:
 

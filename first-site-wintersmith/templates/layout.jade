@@ -31,7 +31,7 @@ html(lang='en')
         div.collapse.navbar-collapse#idnavigation-example-2
           ul.nav.navbar-nav.navbar-right
             li
-              a.btn.btn-simple(href=) Portfolio
+              a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
             li
               a.btn.btn-simple(href=contents['blog.json'].url) Blog
     div.wrapper
@@ -40,6 +40,7 @@ html(lang='en')
           div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
           block content
 
+    block footer
     footer.footer-demo.section-white
       div.container
         div.copyright.pull-right

@@ -12,5 +12,21 @@ block content
           h4
             - var permalink = locals.url + article.url;
             a(href=permalink)= article.title
-          p.post-subtitle= article.intro
-          p.post-meta= article.rfc822date
+          p.post-meta Posted #{moment.utc(article.date).format('MMMM DD, YYYY')}
+            if article.intro.length > 0
+              != typogr(article.intro).typogrify()
+            if article.hasMore
+              p.more
+                a(href=article.url) Read more
+          hr
+block prepend footer
+  div.container
+    div.modal-body
+      a(href='https://github.com/saundie184').btn.btn-simple
+        i.fa.fa-github.fa-2x
+      a(href='https://www.linkedin.com/in/saundieweiss').btn.btn-simple
+        i.fa.fa-linkedin.fa-2x
+      a(href='mailto:saundieweiss@gmail.com').btn.btn-simple
+        i.fa.fa-at.fa-2x
+      a(href='#').btn.btn-simple
+        i.fa.fa-file-text.fa-2x

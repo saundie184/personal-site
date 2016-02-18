@@ -1,1 +1,29 @@
 extends layout
+
+block content
+  div.container
+    div.row
+      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        a(href="https://whatintheworld.firebaseapp.com/")
+          h4.post-title What in the World
+        p.post-meta Technologies used: HTML, CSS, JavaScript, jQuery
+        p.post-subtitle For my first project in gSchool, I built an application to help engage middle school students in current news. They will be able to search for news stories by choosing their own search term. Stories are displayed with the newest items on the top. The publication date is also shown, so students can immediately see which stories were published today. I used AJAX to call the Guardian API to query news articles based on a search term. The categories (sections) are also displayed next to the articles with icons. Since the students can pick any search term, they will be able to see how news stories (from a variety of sections) may contain information that they care about. I used Bootstrap for the CSS and Bootstrap glyphicons for the icons. I created a map object that matched each section name to the icon. Since the Guardian has a lot of sections, I created a default icon for cases where the section name was not listed in the map. This project gave me more experience with JavaScript, jQuery, APIs, and specifically with handling errors and default cases.
+        a(href='https://whatintheworld.firebaseapp.com/')
+          p.post-meta Visit site
+        a(href='https://vimeo.com/146939181')
+          p.post-meta View screencast
+        a(href="https://whatintheworld.firebaseapp.com/")
+          img.img-thumbnail(src=contents['What in the World screenshot.png'].url)
+
+block prepend footer
+  hr
+  div.container
+    div.modal-body
+      a(href='https://github.com/saundie184').btn.btn-simple
+        i.fa.fa-github.fa-2x
+      a(href='https://www.linkedin.com/in/saundieweiss').btn.btn-simple
+        i.fa.fa-linkedin.fa-2x
+      a(href='mailto:saundieweiss@gmail.com').btn.btn-simple
+        i.fa.fa-at.fa-2x
+      a(href='#').btn.btn-simple
+        i.fa.fa-file-text.fa-2x

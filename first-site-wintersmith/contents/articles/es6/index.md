@@ -7,6 +7,8 @@ template: article.jade
 
 We started exploring the new features that rolled out in ES6. We're using [Babel, a JavaScript complier](https://babeljs.io/).
 
+<span class="more"></span>
+
 ES6 defines two new ways to store values, `let` and `const`. They are block scoped, so their scopes are only defined within `{}`.
 
 Another new feature is the arrow notation. This is a new way to write functions. Arrow notation is less code to write and simpler. They are always anonymous and lexically bind `this`, which means that `this` will bind to the parent function.

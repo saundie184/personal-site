@@ -5,7 +5,24 @@ block prepend title
   | #{ page.title + ' - '}
 
 block content
-      h4.post-title= page.title
-        p.post-meta= moment.utc(page.date).format('DD. MMMM YYYY')
-        p
-          section.content!= typogr(page.html).typogrify()
+  div.container
+    div.row
+      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        div.post-preview
+          h4= page.title
+            p.post-meta Posted #{moment.utc(page.date).format('MMMM DD, YYYY')}
+              p
+                section.content!= typogr(page.html).typogrify()
+
+block prepend footer
+  hr
+  div.container
+    div.modal-body
+      a(href='https://github.com/saundie184').btn.btn-simple
+        i.fa.fa-github.fa-2x
+      a(href='https://www.linkedin.com/in/saundieweiss').btn.btn-simple
+        i.fa.fa-linkedin.fa-2x
+      a(href='mailto:saundieweiss@gmail.com').btn.btn-simple
+        i.fa.fa-at.fa-2x
+      a(href='#').btn.btn-simple
+        i.fa.fa-file-text.fa-2x
