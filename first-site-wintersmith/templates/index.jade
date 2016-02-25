@@ -2,11 +2,12 @@
 extends layout
 
 block nav
-  ul.nav.navbar-nav.navbar-right
-    li
-      a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
-    li
-      a.btn.btn-simple(href=contents['blog.json'].url) Blog
+  div.container
+    ul.nav.navbar-nav.navbar-right
+      li
+        a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
+      li
+        a.btn.btn-simple(href=contents['blog.json'].url) Blog
 
 block content
   div.profile-content.section-white
@@ -16,11 +17,12 @@ block content
           div.avatar
             img(src=contents['GalvanizeHeadshot-220_cropped.jpg'].url, alt="Circle Image").img-circle.img-no-padding.img-responsive
         div.row
-          div.col-md-6.col-md-offset-3.text-center
+          div.col-xs-6.col-xs-offset-3.text-center
             div.name
-            h4 Saundie Weiss
+            h4.hidden-xs Saundie Weiss
             h5 Full Stack Developer
-            p I am a student in the Full Stack program at Galvanize Fort Collins. My interest in code began when I was working as a copywriter writing for websites and event communications at a high-tech B2B marketing agency. I am creative, curious, and passionate about learning. I like understanding programming concepts from the top-down, so I learn by reading and immersing myself in code. As a developer, I enjoy working on the backend. I am looking for a company that values high-quality work and individual growth.
+            p Hello! I’m currently learning the full stack at Galvanize in Fort Collins, CO. I’m curious, creative, and always looking to learn more. As a former copywriter, I know that details matter. I strive to deliver polished applications with clean code. I am looking for a company that values high-quality work and individual growth. Some of my loves include Angular, Express, the JavaScript Jabber podcast, hiking in the mountains, long road trips, cooking, and really good espresso.
+
 
             a(href='https://github.com/saundie184').btn.btn-simple
               i.fa.fa-github.fa-2x

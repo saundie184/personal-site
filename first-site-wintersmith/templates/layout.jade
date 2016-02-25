@@ -10,6 +10,7 @@ html(lang='en')
       title
         block title
           = locals.name
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       //     Stylesheets
       link(href=contents.css['bootstrap.css'].url, rel="stylesheet")
@@ -18,17 +19,23 @@ html(lang='en')
       link(href=contents.css['examples.css'].url, rel="stylesheet")
 
       //     Fonts and icons
+
       link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel="stylesheet")
       link(href='https://fonts.googleapis.com/css?family=Work+Sans:400,500', rel='stylesheet', type='text/css')
       link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
       link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300', rel='stylesheet', type='text/css')
 
   body
-    nav.navbar.navbar-relative.navbar-ct-primary#register-navbar
+    div.navbar.navbar-relative#register-navbar(role='navigation')
       div.container
         div.navbar-header
-          a.navbar-brand.active-page(href=locals.url) Saundie Weiss
-        div.collapse.navbar-collapse#idnavigation-example-2
+        a.navbar-brand.active-page(href=locals.url) Saundie Weiss
+        #idnavigation-example-2
+        button(data-toggle='collapse', data-target='.navHeaderCollapse').navbar-toggle
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        div.collapse.navbar-collapse.navHeaderCollapse
           block nav
     hr.hidden-xs
     div.wrapper
