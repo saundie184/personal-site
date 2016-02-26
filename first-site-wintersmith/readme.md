@@ -1,3 +1,4 @@
 
-# Blog
-This is my website! It is built on [wintersmith](https://github.com/jnordberg/wintersmith)!
+# Personal site build on wintersmith
+
+Visit my site at [saundie.com](saundie.com)!
