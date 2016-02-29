@@ -20,8 +20,24 @@ block content
         a(href='https://vimeo.com/146939181')
           p.post-meta View screencast
         a(href="https://whatintheworld.firebaseapp.com/")
-          img.img-thumbnail(src=contents['What in the World screenshot.png'].url)
+          img.img-thumbnail(src=contents.images['What in the World screenshot.png'].url)
         hr
+    div.row
+      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        a(href="https://whatintheworld.firebaseapp.com/")
+          h4.post-title Galvanize Ping Pong League
+        p.post-meta Technologies used: HTML, CSS, Bootstrap, JavaScript, Node, Express, Slack API, Reddit API
+        p.post-subtitle This application is a score-tracking application for ping pong games. This was a group project that five of us from my Galvanize cohort worked on. Users are able to use the application with or without a login. The games are logged in a database and wins/losses are tracked with users if they create accounts. Users can see standings for the top ten rankings in the database on the homepage. The homepage has top five Reddit articles about table tennis. Another feature of this application is the integration with Slack. We set up a separate Slack channel that notifies users when a match has been logged. It shows the scores in the Slack channel. The main parts of this application that I worked on were pulling in the Reddit API and generating a list of articles for the homepage and setting up the Slack integration. I also helped set up an AJAX call to allow users to update their own user information. My favorite part of this project was setting up the Slack integration. I really enjoy working with integrations and making applications more valuable for users.
+        a(href='https://galvanize-ping-pong-league.herokuapp.com/')
+          p.post-meta Visit site
+        a(href='https://vimeo.com/146939181')
+          p.post-meta View screencast
+        a(href='https://galvanize-ping-pong-league.herokuapp.com/')
+          img.img-thumbnail(src=contents.images['gppl_screenshot.png'].url)
+        hr
+
+
+
 
 block prepend footer
   div.container
