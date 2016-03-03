@@ -11,4 +11,4 @@ I've been wanting to play with some hardware ever since starting this program. S
 
 During our lunch and learn today, we had a small workshop with Raspberry Pi. [Raspberry Pi] (https://www.raspberrypi.org/) is a mini single-board computer that was originally built to teach kids about computers. It's about the size of a credit card and can plug into a computer monitor, keyboard, and mouse.
 
-You can do tons of things
+You can do tons of things with them!

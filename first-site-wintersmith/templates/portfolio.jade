@@ -1,11 +1,14 @@
 extends layout
 
 block nav
-  ul.nav.navbar-nav.navbar-right
-    li
-      a.btn.btn-simple.active-page(href=contents['portfolio.json'].url) Portfolio
-    li
-      a.btn.btn-simple(href=contents['blog.json'].url) Blog
+  div.collapse.navbar-collapse
+    ul.nav.navbar-nav.navbar-right
+      li
+        a.btn.btn-simple.visible-xs(href=locals.url) Home
+      li
+        a.btn.btn-simple.active-page(href=contents['portfolio.json'].url) Portfolio
+      li
+        a.btn.btn-simple(href=contents['blog.json'].url) Blog
 
 block content
   div.container
@@ -49,7 +52,6 @@ block content
             img.img-thumbnail(src=contents.images['DreamStream screenshots.png'].url)
           hr
 
-block prepend footer
   div.container
     div.modal-body
       a(href='https://github.com/saundie184').btn.btn-simple

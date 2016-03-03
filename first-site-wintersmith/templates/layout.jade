@@ -10,32 +10,27 @@ html(lang='en')
       title
         block title
           = locals.name
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      // Bootstrap
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+
       //     Stylesheets
-      link(href=contents.css['bootstrap.css'].url, rel="stylesheet")
       link(href=contents.css['ct-paper.css'].url, rel="stylesheet")
-      link(href=contents.css['demo.css'].url, rel="stylesheet")
-      link(href=contents.css['examples.css'].url, rel="stylesheet")
 
       //     Fonts and icons
-
       link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel="stylesheet")
-      link(href='https://fonts.googleapis.com/css?family=Work+Sans:400,500', rel='stylesheet', type='text/css')
-      link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
-      link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300', rel='stylesheet', type='text/css')
-
+      link(href='https://fonts.googleapis.com/css?family=Fira+Sans', rel='stylesheet', type='text/css')
   body
     div.navbar.navbar-relative#register-navbar(role='navigation')
       div.container
         div.navbar-header
-        a.navbar-brand.active-page(href=locals.url) Saundie Weiss
-        #idnavigation-example-2
-        button(data-toggle='collapse', data-target='.navHeaderCollapse').navbar-toggle
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        div.collapse.navbar-collapse.navHeaderCollapse
+          button.navbar-toggle(data-toggle="collapse", data-target=".navbar-collapse", type="button")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        a.navbar-brand.active-page.hidden-xs(href=locals.url) Saundie Weiss
           block nav
     hr.hidden-xs
     div.wrapper
@@ -43,8 +38,5 @@ html(lang='en')
         div.row
           div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
           block content
-
-    block footer
-    footer.footer-demo.section-white
-      div.container
-        div.copyright.pull-right
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")

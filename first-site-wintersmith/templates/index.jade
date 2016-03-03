@@ -1,7 +1,7 @@
 extends layout
 
 block nav
-  div.container
+  div.collapse.navbar-collapse
     ul.nav.navbar-nav.navbar-right
       li
         a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
@@ -13,11 +13,12 @@ block content
     div.container
       div.row.owner
         div.col-md-2.col-md-offset-5.col-sm-4.col-sm-offset-4.col-xs-6.col-xs-offset-3.text-center
-          div.avatar
+          div.avatar.hidden-xs
             img(src=contents.images['GalvanizeHeadshot-220_cropped.jpg'].url, alt="Circle Image").img-circle.img-no-padding.img-responsive
         div.row
           div.col-xs-6.col-xs-offset-3.text-center
             div.name
+            h4.visible-xs.xs-only(href=locals.url) Saundie Weiss
             h4.hidden-xs Saundie Weiss
             h5 Full Stack Developer
             p Hello! I’m currently learning the full stack at Galvanize in Fort Collins, CO. I’m curious, creative, and always looking to learn more. As a former copywriter, I know that details matter. I strive to deliver polished applications with clean code. I am looking for a company that values high-quality work and individual growth. Some of my loves include Angular, Express, the JavaScript Jabber podcast, hiking in the mountains, long road trips, cooking, and really good espresso.

@@ -2,11 +2,14 @@
 extends layout
 
 block nav
-  ul.nav.navbar-nav.navbar-right
-    li
-      a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
-    li
-      a.btn.btn-simple(href=contents['blog.json'].url) Blog
+  div.collapse.navbar-collapse
+    ul.nav.navbar-nav.navbar-right
+      li
+        a.btn.btn-simple.visible-xs(href=locals.url) Home
+      li
+        a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
+      li
+        a.btn.btn-simple(href=contents['blog.json'].url) Blog
 
 block prepend title
   | #{ page.title + ' - '}
@@ -21,7 +24,7 @@ block content
               p
                 section.content!= typogr(page.html).typogrify()
 
-block prepend footer
+
   hr
   div.container
     div.modal-body
