@@ -1,5 +1,5 @@
 ---
-title: Hello, Java
+title: public static main(String [] args)
 author: Saundie Weiss
 date: 2016-03-01
 template: article.jade
