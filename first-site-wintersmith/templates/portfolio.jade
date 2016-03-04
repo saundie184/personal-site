@@ -1,32 +1,33 @@
 extends layout
 
 block nav
-  div.collapse.navbar-collapse
-    ul.nav.navbar-nav.navbar-right
-      li
-        a.btn.btn-simple.visible-xs(href=locals.url) Home
-      li
-        a.btn.btn-simple.active-page(href=contents['portfolio.json'].url) Portfolio
-      li
-        a.btn.btn-simple(href=contents['blog.json'].url) Blog
+  a.navbar-brand.active-page.hidden-xs(href=locals.url) Saundie Weiss
+    div.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a.btn.btn-simple.visible-xs(href=locals.url) Home
+        li
+          a.btn.btn-simple.active-page.hidden-xs(href=contents['portfolio.json'].url) Portfolio
+        li
+          a.btn.btn-simple(href=contents['blog.json'].url) Blog
 
 block content
   div.container
     div.row
-      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-        a(href="https://whatintheworld.firebaseapp.com/")
-          h4.post-title What in the World
-        p.post-meta Technologies used: HTML, CSS, JavaScript, jQuery
-        p.post-subtitle For my first project in gSchool, I built an application to help engage middle school students in current news. They will be able to search for news stories by choosing their own search term. Stories are displayed with the newest items on the top. The publication date is also shown, so students can immediately see which stories were published today. I used AJAX to call the Guardian API to query news articles based on a search term. The categories (sections) are also displayed next to the articles with icons. Since the students can pick any search term, they will be able to see how news stories (from a variety of sections) may contain information that they care about. I used Bootstrap for the CSS and Bootstrap glyphicons for the icons. I created a map object that matched each section name to the icon. Since the Guardian has a lot of sections, I created a default icon for cases where the section name was not listed in the map. This project gave me more experience with JavaScript, jQuery, APIs, and specifically with handling errors and default cases.
-        a(href='https://whatintheworld.firebaseapp.com/')
-          p.post-meta Visit site
-        a(href='https://vimeo.com/146939181')
+      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-xs-9.col-xs-offset-1
+        a(href="https://github.com/IanSmith89/dreamStream")
+          h4.post-title DreamStream
+        p.post-meta Technologies used: HTML, CSS, SASS, JavaScript, Ionic, Angular, IBM Watson Personality Insights API, D3 Data Visualizations, d3-cloud by Jason Davies, HighCharts
+        p.post-subtitle Our dream tracker mobile application helps you keep track of your dreams. You can describe the each dream and give it a rating. You can also track your mood (overall life stress) at that time and the duration of sleep. All data inputs are calculated and visualized in charts to show average mood, average rating, and mood compared to rating. The data is analyzed by Watson Personality Insights API and shows a pie chart of how your dreams reflect your personality. The common words from the dreams are populated into a word cloud. Filters are added to exclude common words like "a, the, and, etc." You can also add custom word filters to exclude any other common words that you do not want to see in your word cloud. This was a group project, and I focused on setting up the Ionic framework, building the D3 Word Cloud, adding custom filters, and setting up routes.
+        a(href='https://dreamstream.firebaseapp.com')
+          p.post-meta View site (mobile application shown in-browser)
+        a(href=' https://vimeo.com/157201586')
           p.post-meta View screencast
-        a(href="https://whatintheworld.firebaseapp.com/")
-          img.img-thumbnail(src=contents.images['What in the World screenshot.png'].url)
+        a(href="https://dreamstream.firebaseapp.com")
+          img.img-thumbnail(src=contents.images['DreamStream screenshots.png'].url)
         hr
     div.row
-      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-xs-9.col-xs-offset-1
         a(href="https://whatintheworld.firebaseapp.com/")
           h4.post-title Galvanize Ping Pong League
         p.post-meta Technologies used: HTML, CSS, Bootstrap, JavaScript, Node, Express, Slack API, Reddit API
@@ -39,17 +40,17 @@ block content
           img.img-thumbnail(src=contents.images['gppl_screenshot.png'].url)
         hr
     div.row
-      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-        a(href="https://github.com/IanSmith89/dreamStream")
-          h4.post-title DreamStream
-        p.post-meta Technologies used: HTML, CSS, SASS, JavaScript, Ionic, Angular, IBM Watson Personality Insights API, D3 Data Visualizations, d3-cloud by Jason Davies, HighCharts
-        p.post-subtitle Our dream tracker application helps you keep track of your dreams. You can describe the each dream and give it a rating. You can also track your mood (overall life stress) at that time and the duration of sleep. All data inputs are calculated and visualized in charts to show average mood, average rating, and mood compared to rating. The data is analyzed by Watson Personality Insights API and shows a pie chart of how your dreams reflect your personality. The common words from the dreams are populated into a word cloud. Filters are added to exclude common words like "a, the, and, etc." You can also add custom word filters to exclude any other common words that you do not want to see in your word cloud. This was a group project, and I focused on setting up the Ionic framework, building the D3 Word Cloud, adding custom filters, and setting up routes.
-        a(href='https://github.com/IanSmith89/dreamStream')
-          p.post-meta View Github repo
-        a(href=' https://vimeo.com/157201586')
+      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-xs-9.col-xs-offset-1
+        a(href="https://whatintheworld.firebaseapp.com/")
+          h4.post-title What in the World
+        p.post-meta Technologies used: HTML, CSS, JavaScript, jQuery
+        p.post-subtitle For my first project in gSchool, I built an application to help engage middle school students in current news. They will be able to search for news stories by choosing their own search term. Stories are displayed with the newest items on the top. The publication date is also shown, so students can immediately see which stories were published today. I used AJAX to call the Guardian API to query news articles based on a search term. The categories (sections) are also displayed next to the articles with icons. Since the students can pick any search term, they will be able to see how news stories (from a variety of sections) may contain information that they care about. I used Bootstrap for the CSS and Bootstrap glyphicons for the icons. I created a map object that matched each section name to the icon. Since the Guardian has a lot of sections, I created a default icon for cases where the section name was not listed in the map. This project gave me more experience with JavaScript, jQuery, APIs, and specifically with handling errors and default cases.
+        a(href='https://whatintheworld.firebaseapp.com/')
+          p.post-meta Visit site
+        a(href='https://vimeo.com/146939181')
           p.post-meta View screencast
-        a(href="https://github.com/IanSmith89/dreamStream")
-          img.img-thumbnail(src=contents.images['DreamStream screenshots.png'].url)
+        a(href="https://whatintheworld.firebaseapp.com/")
+          img.img-thumbnail(src=contents.images['What in the World screenshot.png'].url)
         hr
 
   div.container

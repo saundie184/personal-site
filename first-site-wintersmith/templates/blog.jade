@@ -1,20 +1,21 @@
 extends layout
 
 block nav
-  div.collapse.navbar-collapse
-    ul.nav.navbar-nav.navbar-right
-      li
-        a.btn.btn-simple.visible-xs(href=locals.url) Home
-      li
-        a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
-      li
-        a.btn.btn-simple.active-page(href=contents['blog.json'].url) Blog
+  a.navbar-brand.active-page.hidden-xs(href=locals.url) Saundie Weiss
+    div.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a.btn.btn-simple.visible-xs(href=locals.url) Home
+        li
+          a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
+        li
+          a.btn.btn-simple.active-page.hidden-xs(href=contents['blog.json'].url) Blog
 
 block content
   div.container
     div.row
-      div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-        div.post-preview
+    div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      div.post-preview
         - var articles = env.helpers.getArticles(contents);
         title= locals.name
         atom:link(href=locals.url + '/feed.xml', rel='self', type='application/rss+xml')
@@ -22,7 +23,7 @@ block content
           h4
             - var permalink = locals.url + article.url;
             a(href=permalink)= article.title
-          p.post-meta Posted #{moment.utc(article.date).format('MMMM DD, YYYY')}
+            p.post-meta Posted #{moment.utc(article.date).format('MMMM DD, YYYY')}
             if article.intro.length > 0
               != typogr(article.intro).typogrify()
             if article.hasMore

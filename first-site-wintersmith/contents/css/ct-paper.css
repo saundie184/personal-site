@@ -2777,3 +2777,8 @@ textarea.form-control {
   padding: 20px 15px;
   font-size: 22px;
 }
+.name-title {
+  color: #4F3A92;
+  font-weight: bolder;
+  font-size: 22px;
+}
