@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Saundie Weiss</title>
+    <atom:link href="http://saundie.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://saundie.com</link>
+    <description>My personal site, blog, and portfolio.</description>
+    <pubDate>Mon, 29 Feb 2016 17:00:00 -0700</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>public static main(String [] args)</title>
+      <link>http://saundie.com/articles/java/</link>
+      <pubDate>Mon, 29 Feb 2016 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/java/</guid>
+      <author></author>
+      <description>&lt;p&gt;Today, we started learning Java!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;It’s quite different than JavaScript. Java is a strongly typed language and is not functional at all. It’s strictly object-oriented. It’s very explicit but also very verbose. I don’t want to say that it is going to be easier to learn, but I can definitely see how some of the concepts that I’ve already learned from JavaScript will apply. Or, at the very least, I will have something to compare it to.&lt;/p&gt;
+&lt;p&gt;We learned about classes, finally! From day one in gSchool, we have heard, “JavaScript does not have classes”, but now I’m learning a language that does. So, what’s the big deal? Guess I’ll find out. :)&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>New features in ES6</title>
+      <link>http://saundie.com/articles/es6/</link>
+      <pubDate>Tue, 09 Feb 2016 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/es6/</guid>
+      <author></author>
+      <description>&lt;p&gt;We started exploring the new features that rolled out in ES6. We’re using &lt;a href=&quot;https://babeljs.io/&quot;&gt;Babel, a JavaScript complier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;ES6 defines two new ways to store values, &lt;code&gt;let&lt;/code&gt; and &lt;code&gt;const&lt;/code&gt;. They are block scoped, so their scopes are only defined within &lt;code&gt;{}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Another new feature is the arrow notation. This is a new way to write functions. Arrow notation is less code to write and simpler. They are always anonymous and lexically bind &lt;code&gt;this&lt;/code&gt;, which means that &lt;code&gt;this&lt;/code&gt; will bind to the parent function.&lt;/p&gt;
+&lt;p&gt;You can use the arrow notation like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function myCalc(){
+  this.total = 0;
+  let someArr = [1,2,3,4];
+
+  someArr.forEach((item) =&amp;gt; {
+    this.total += item;
+    });
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The feature that I’m most excited about is the &lt;code&gt;for...of&lt;/code&gt; loop. This loop will iterate of “iterable objects” (MDN), which means that we can use it for objects &lt;strong&gt;and&lt;/strong&gt; arrays. Before, we could only use the &lt;code&gt;for...in&lt;/code&gt; loop to loop through objects.&lt;/p&gt;
+&lt;p&gt;I know there are more to explore, but for now, these are the features I’m most excited about!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Galvanize Ping Pong League</title>
+      <link>http://saundie.com/articles/gppl/</link>
+      <pubDate>Thu, 07 Jan 2016 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/gppl/</guid>
+      <author></author>
+      <description>&lt;p&gt;Before the holidays, we completed another project. This was a group project, and it was really cool to work with a team. We created Galvanize Ping Pong League (GPPL).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://galvanize-ping-pong-league.herokuapp.com/&quot;&gt;You can view the application here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/149898674&quot;&gt;You can watch screencast demo here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GPPL is a score-tracking application for ping pong games. Users are able to use the application with or without a login. The games are logged in a database and wins/losses are tracked with users if they create accounts.&lt;/p&gt;
+&lt;p&gt;Users can see standings for the top ten rankings in the database on the homepage. The homepage has top five Reddit articles about table tennis.&lt;/p&gt;
+&lt;p&gt;Another feature of this application is the integration with Slack. We set up a separate Slack channel that notifies users when a match has been logged. It shows the scores in the Slack channel.&lt;/p&gt;
+&lt;p&gt;The main parts of this application that I worked on were pulling in the Reddit API and generating a list of articles for the homepage and setting up the Slack integration. I also helped set up an AJAX call to allow users to update their own user information.&lt;/p&gt;
+&lt;p&gt;My favorite part of this project was setting up the Slack integration. I really enjoy working with integrations and making applications more valuable for users.&lt;/p&gt;
+&lt;h5 id=&quot;more-express-http-expressjs-com-&quot;&gt;More &lt;a href=&quot;http://expressjs.com/&quot;&gt;Express&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;We are one week into the new year, and we have definitely hit the ground running since the holiday break.&lt;/p&gt;
+&lt;p&gt;We have been building applications using Express. I’m trying to get into Express every single day to reinforce setting up the application. After working with it this week, it’s finally starting to click. I’ve set up simple applications that allow users to sign up, sign in, and sign out.&lt;/p&gt;
+&lt;p&gt;We added Knex to it, too, which connects SQL. This took me a little bit to figure out, but I am really excited about it because now we can connect our databases. We are working with Postgres. I really like it but their documentation is dense! This will take some practice. I really want to master working with Postgres.&lt;/p&gt;
+&lt;p&gt;We were introduced to Bcrypt this week. Bcrypt is how we hash passwords. It’s a node module that we require into Express, and it’s pretty simple to run. Security is really important in web applications, and even though we are just working with passwords right now, it’s good to understand how it works.&lt;/p&gt;
+&lt;p&gt;Another new concept this week that we talked about are promises. Promises are specific to JavaScript and handle asynchronous code. They are objects that handle pending resolutions. We have been refactoring our code to change the callbacks to promises. They seem complicated in theory, but are simpler in implementation.&lt;/p&gt;
+&lt;p&gt;Yesterday, we worked with cookies and sessions. HTTP Cookies are stored in the browser and are set by the server to store data in the client. They are key-value pairs. Sessions are data identifiers that are connected to a user. These are a little bit harder to understand, but I found this article this morning that gives a good explanation.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Intro to server-side development, OOP, and NodeJS</title>
+      <link>http://saundie.com/articles/serverside/</link>
+      <pubDate>Wed, 09 Dec 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/serverside/</guid>
+      <author></author>
+      <description>&lt;p&gt;We are now learning server side development! I have a feeling things are going to get exciting now. We started talking about Object-Oriented Programming (OOP) and pair-programming.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;OOP has four main concepts: Encapsulation, Abstraction, Inheritance, and Polymorphism. We spent a few days talking about these and saw examples of how they are used. In some of the exercises that we did, we had to identify which concept(s) were being used. It feels like just a lot of theory right now, but I think the more I work with JavaScript, the more I’ll understand these concepts.&lt;/p&gt;
+&lt;p&gt;Here are my definitions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Encapsulation - grouping like behaviors and like states; creating an object to take care of one thing; controlling how data and behavior are accessed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Abstraction -  simplifying a component to it’s simplest methods, to an interface; moving away from the details&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Inheritance - shared behavior and states that are defined in one place&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Polymorphism – “many forms”; function that has multiple behaviors based on what you pass into it&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We were also introduced to the “this” keyword, the “new” keyword, and prototypes.&lt;/p&gt;
+&lt;p&gt;Next, we started in Node.js and learned about modules. I like this because it is very organized, and I love organized things! It is also going to be really powerful because we will be able to create and reuse modules.&lt;/p&gt;
+&lt;p&gt;I went to the NoCo JavaScript Meetup this week for the first time. It was pretty cool because the discussion topic was about closures, which we’ve been talking about the past few weeks. I followed about 98% of the discussion and it was really good to hear the same topics discussed and demonstrated in a different way. It’s starting to feel real-world applicable! One of the guys I met recommended that I check out Secrets of a JavaScript Ninja. He said it’s written by one of the guys that wrote JavaScript.&lt;/p&gt;
+&lt;p&gt;We are just now getting into setting up a server and MongoDB. I feel like we are learning a lot of parts, and I just need to figure out how to make them connect and talk to each other. More to come!&lt;/p&gt;
+&lt;p&gt;My motto this week: Read more! Build more!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>What in the World</title>
+      <link>http://saundie.com/articles/whatintheworld/</link>
+      <pubDate>Tue, 24 Nov 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/whatintheworld/</guid>
+      <author></author>
+      <description>&lt;p&gt;My first project!&lt;/p&gt;
+&lt;p&gt;This application is designed to engage middle school students in current news. They will be able to search for news stories by choosing their own search term. Stories are displayed with the newest items on the top. The publication date is also shown, so students can immediately see which stories were published today.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I used AJAX to call the Guardian API to query news articles based on a search term. The categories (sections) are also displayed next to the articles with icons. Since the students can pick any search term, they will be able to see how news stories (from a variety of sections) may contain information that they care about.&lt;/p&gt;
+&lt;p&gt;I used Bootstrap for the CSS and Bootstrap glyphicons for the icons. I created a map object that matched each section name to the icon. Since the Guardian has a lot of sections, I created a default icon for cases where the section name was not listed in the map. This project gave me more experience with JavaScript, jQuery, APIs, and specifically with handling errors and default cases.&lt;/p&gt;
+&lt;p&gt;Application: &lt;a href=&quot;https://whatintheworld.firebaseapp.com/&quot;&gt;https://whatintheworld.firebaseapp.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Screencast demo: &lt;a href=&quot;https://vimeo.com/146939181&quot;&gt;https://vimeo.com/146939181&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I was very excited to deploy my first application! It feels good to build something that works! I’m currently working on deploying it as a Chrome App. One of the students in my class gave a lightning talk on Chrome Apps. He provided lots of links and a demonstration of how to set it up. I need to make some changes to fix some of the CSS, but it will look pretty sweet when it does work. I’m also hoping that my friend will test this out in her middle school Current Affairs class.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>The DOM, Bootstrap, and UI/UX</title>
+      <link>http://saundie.com/articles/dom/</link>
+      <pubDate>Thu, 12 Nov 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/dom/</guid>
+      <author></author>
+      <description>&lt;p&gt;Wow. It has been a very BUSY last two weeks. Almost everyday, we learn an entirely new concept. I’m going to be using this blog to document what I am learning. It’s going to be a crazy ride for sure, but it’s starting to get exciting.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We were introduced to the DOM, aka the “Document Object Model”. I had never heard of the DOM before this week, but I learned why it is so important to programming. We practiced using JavaScript (with the DOM) to build and style pages—no CSS.&lt;/p&gt;
+&lt;p&gt;We also learned about event handlers in JavaScript. These add actions and behaviors to web pages. This is where things got really exciting for me. With event handlers, we can make real activity happen. Right now, I’m just adding click actions, but we worked on building a piano keyboard and toggling stoplight colors.&lt;/p&gt;
+&lt;p&gt;Finally, we met Bootstrap. Best introduction yet. Building CSS from scratch was cumbersome for me, and Bootstrap is so much faster. It’s a CSS framework with lots of goodness built in so I just have to come up with really snazzy HTML.  I’m still learning the ins and outs of Bootstrap, and I need to understand the framework better, but it’s been great so far.&lt;/p&gt;
+&lt;p&gt;One of the Galvanize members, Jochen Wolters, came to speak to us during a “Lunch and Learn” this week. He talked about UI/UX design and demonstrated the importance that we, as developers, have to understanding how it works. He also emphasized how we need to be ensure there is good communication between design and development teams. I love how his talk was about how “tech meets the end-users”. We really have to consider how our work will be functional for users (humans). If we build programs for end-users, this critical.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/jochen_wolters/an-introduction-to-ben-shneidermans-eight-golden-rules-of-interface-design&quot;&gt;You can click here to view his presentation on SlideShare.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Another thing I’ve been working with more is GitHub. Versioning is so important!&lt;/p&gt;
+&lt;p&gt;My motto this week: Build more stuff!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>First week of gSchool</title>
+      <link>http://saundie.com/articles/first/</link>
+      <pubDate>Thu, 29 Oct 2015 18:00:00 -0600</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/first/</guid>
+      <author></author>
+      <description>&lt;p&gt;This is the end of week one in gSchool, and I’m learning so many new things. Every day, we are introduced to new content and then we immediately are asked to apply it.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;It feels like I am getting a taste of everything, but I haven’t been given the time to take in a full meal yet. It is frustrating, and at the same time, exciting. I wish I could master one element, or be able to enjoy a full meal, before I am given the next. It’s like being at a restaurant and trying to take multiple trips to the buffet line with your plate still full. Gross. Guess I’ll get over it.&lt;/p&gt;
+&lt;p&gt;This will take repetition, I am realizing. With so much going into my brain, there seems to be little time to put it all into practice. At the beginning of gSchool, we were encouraged to take risks and play. I have accepted that I will not know all the tools or even the rules before I start.&lt;/p&gt;
+&lt;p&gt;We worked on HTML and CSS this week. This is a journey, and we are learning as we code, or coding to learn. I am enjoying the problem-solving and solution-finding aspects of coding, but I feel limited by my (lack of) knowledge of the tools. For instance, I wish I knew all the elements and selectors and rules to CSS. This would make it feel like I had more options available. I do find it valuable to know where to find resources that describe how to use certain tools.&lt;/p&gt;
+&lt;p&gt;Right now, I am spending a lot of time looking things up and finding the solution (or asking someone to explain something) and then trying it myself.&lt;/p&gt;
+&lt;p&gt;My motto right now: More playing, more trying, more reading.&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

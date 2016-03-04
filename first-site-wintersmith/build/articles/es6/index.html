@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>New features in ES6 - Saundie Weiss
+    </title>
+    <link rel="alternate" href="http://saundie.com/feed.xml" type="application/rss+xml" title="My personal site, blog, and portfolio.">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--     Stylesheets-->
+    <link href="/css/ct-paper.css" rel="stylesheet">
+    <!--     Fonts and icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="register-navbar" role="navigation" class="navbar navbar-relative">
+      <div class="container">
+        <div class="navbar-header navbar-right">
+          <button data-toggle="collapse" data-target=".navbar-collapse" type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://saundie.com" class="btn btn-simple visible-xs">Home</a></li>
+            <li><a href="/portfolio.html" class="btn btn-simple">Portfolio</a></li>
+            <li><a href="/blog.html" class="btn btn-simple">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hidden-xs">
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-9 col-xs-offset-1">
+                <div class="post-preview">
+                  <h4>New features in ES6
+                    <p class="post-meta">Posted February 10, 2016
+                      <p>
+                        <section class="content"><p>We started exploring the new features that rolled out in <span class="caps">ES6</span>. We’re using <a href="https://babeljs.io/">Babel, a JavaScript complier</a>.</p>
+<p><span class="more"></span></p>
+<p><span class="caps">ES6</span> defines two new ways to store values, <code>let</code> and <code>const</code>. They are block scoped, so their scopes are only defined within <code>{}</code>.</p>
+<p>Another new feature is the arrow notation. This is a new way to write functions. Arrow notation is less code to write and simpler. They are always anonymous and lexically bind <code>this</code>, which means that <code>this</code> will bind to the parent&nbsp;function.</p>
+<p>You can use the arrow notation like&nbsp;this:</p>
+<pre><code>function myCalc(){
+  this.total = 0;
+  let someArr = [1,2,3,4];
+
+  someArr.forEach((item) =&gt; {
+    this.total += item;
+    });
+  }
+</code></pre><p>The feature that I’m most excited about is the <code>for...of</code> loop. This loop will iterate of “iterable objects” (<span class="caps">MDN</span>), which means that we can use it for objects <strong>and</strong> arrays. Before, we could only use the <code>for...in</code> loop to loop through&nbsp;objects.</p>
+<p>I know there are more to explore, but for now, these are the features I’m most excited&nbsp;about!</p>
+</section>
+                      </p>
+                    </p></h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="modal-body"><a href="https://github.com/saundie184" class="btn btn-simple"><i class="fa fa-github fa-2x"></i></a><a href="https://www.linkedin.com/in/saundieweiss" class="btn btn-simple"><i class="fa fa-linkedin fa-2x"></i></a><a href="mailto:saundieweiss@gmail.com" class="btn btn-simple"><i class="fa fa-at fa-2x"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

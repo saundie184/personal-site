@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Saundie Weiss
+    </title>
+    <link rel="alternate" href="http://saundie.com/feed.xml" type="application/rss+xml" title="My personal site, blog, and portfolio.">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--     Stylesheets-->
+    <link href="/css/ct-paper.css" rel="stylesheet">
+    <!--     Fonts and icons-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="register-navbar" role="navigation" class="navbar navbar-relative">
+      <div class="container">
+        <div class="navbar-header navbar-right">
+          <button data-toggle="collapse" data-target=".navbar-collapse" type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div><a href="http://saundie.com" class="navbar-brand active-page hidden-xs">Saundie Weiss
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://saundie.com" class="btn btn-simple visible-xs">Home</a></li>
+              <li><a href="/portfolio.html" class="btn btn-simple active-page hidden-xs">Portfolio</a></li>
+              <li><a href="/blog.html" class="btn btn-simple">Blog</a></li>
+            </ul>
+          </div></a>
+      </div>
+    </div>
+    <hr class="hidden-xs">
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-9 col-xs-offset-1"><a href="https://github.com/IanSmith89/dreamStream">
+                  <h4 class="post-title">DreamStream</h4></a>
+                <p class="post-meta">Technologies used: HTML, CSS, SASS, JavaScript, Ionic, Angular, IBM Watson Personality Insights API, D3 Data Visualizations, d3-cloud by Jason Davies, HighCharts</p>
+                <p class="post-subtitle">Our dream tracker mobile application helps you keep track of your dreams. You can describe the each dream and give it a rating. You can also track your mood (overall life stress) at that time and the duration of sleep. All data inputs are calculated and visualized in charts to show average mood, average rating, and mood compared to rating. The data is analyzed by Watson Personality Insights API and shows a pie chart of how your dreams reflect your personality. The common words from the dreams are populated into a word cloud. Filters are added to exclude common words like "a, the, and, etc." You can also add custom word filters to exclude any other common words that you do not want to see in your word cloud. This was a group project, and I focused on setting up the Ionic framework, building the D3 Word Cloud, adding custom filters, and setting up routes.</p><a href="https://dreamstream.firebaseapp.com">
+                  <p class="post-meta">View site (mobile application shown in-browser)</p></a><a href=" https://vimeo.com/157201586">
+                  <p class="post-meta">View screencast</p></a><a href="https://dreamstream.firebaseapp.com"><img src="/images/DreamStream%20screenshots.png" class="img-thumbnail"></a>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-9 col-xs-offset-1"><a href="https://whatintheworld.firebaseapp.com/">
+                  <h4 class="post-title">Galvanize Ping Pong League</h4></a>
+                <p class="post-meta">Technologies used: HTML, CSS, Bootstrap, JavaScript, Node, Express, Slack API, Reddit API</p>
+                <p class="post-subtitle">This application is a score-tracking application for ping pong games. This was a group project that five of us from my Galvanize cohort worked on. Users are able to use the application with or without a login. The games are logged in a database and wins/losses are tracked with users if they create accounts. Users can see standings for the top ten rankings in the database on the homepage. The homepage has top five Reddit articles about table tennis. Another feature of this application is the integration with Slack. We set up a separate Slack channel that notifies users when a match has been logged. It shows the scores in the Slack channel. The main parts of this application that I worked on were pulling in the Reddit API and generating a list of articles for the homepage and setting up the Slack integration. I also helped set up an AJAX call to allow users to update their own user information. My favorite part of this project was setting up the Slack integration. I really enjoy working with integrations and making applications more valuable for users.</p><a href="https://galvanize-ping-pong-league.herokuapp.com/">
+                  <p class="post-meta">Visit site</p></a><a href="https://vimeo.com/146939181">
+                  <p class="post-meta">View screencast</p></a><a href="https://galvanize-ping-pong-league.herokuapp.com/"><img src="/images/gppl_screenshot.png" class="img-thumbnail"></a>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-9 col-xs-offset-1"><a href="https://whatintheworld.firebaseapp.com/">
+                  <h4 class="post-title">What in the World</h4></a>
+                <p class="post-meta">Technologies used: HTML, CSS, JavaScript, jQuery</p>
+                <p class="post-subtitle">For my first project in gSchool, I built an application to help engage middle school students in current news. They will be able to search for news stories by choosing their own search term. Stories are displayed with the newest items on the top. The publication date is also shown, so students can immediately see which stories were published today. I used AJAX to call the Guardian API to query news articles based on a search term. The categories (sections) are also displayed next to the articles with icons. Since the students can pick any search term, they will be able to see how news stories (from a variety of sections) may contain information that they care about. I used Bootstrap for the CSS and Bootstrap glyphicons for the icons. I created a map object that matched each section name to the icon. Since the Guardian has a lot of sections, I created a default icon for cases where the section name was not listed in the map. This project gave me more experience with JavaScript, jQuery, APIs, and specifically with handling errors and default cases.</p><a href="https://whatintheworld.firebaseapp.com/">
+                  <p class="post-meta">Visit site</p></a><a href="https://vimeo.com/146939181">
+                  <p class="post-meta">View screencast</p></a><a href="https://whatintheworld.firebaseapp.com/"><img src="/images/What%20in%20the%20World%20screenshot.png" class="img-thumbnail"></a>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="modal-body"><a href="https://github.com/saundie184" class="btn btn-simple"><i class="fa fa-github fa-2x"></i></a><a href="https://www.linkedin.com/in/saundieweiss" class="btn btn-simple"><i class="fa fa-linkedin fa-2x"></i></a><a href="mailto:saundieweiss@gmail.com" class="btn btn-simple"><i class="fa fa-at fa-2x"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
