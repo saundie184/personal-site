@@ -5,7 +5,7 @@ date: 2016-03-01
 template: article.jade
 ---
 
-Today was my first introduction into a new programming language. We're learning Java!
+Today, we started learning Java!
 
 <span class="more"></span>
 
