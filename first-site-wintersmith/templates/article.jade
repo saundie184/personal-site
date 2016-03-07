@@ -2,14 +2,15 @@
 extends layout
 
 block nav
-  div.collapse.navbar-collapse
-    ul.nav.navbar-nav.navbar-right
-      li
-        a.btn.btn-simple.visible-xs(href=locals.url) Home
-      li
-        a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
-      li
-        a.btn.btn-simple(href=contents['blog.json'].url) Blog
+  a.navbar-brand.active-page.hidden-xs(href=locals.url) Saundie Weiss
+    div.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a.btn.btn-simple.visible-xs(href=locals.url) Home
+        li
+          a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
+        li
+          a.btn.btn-simple(href=contents['blog.json'].url) Blog
 
 block prepend title
   | #{ page.title + ' - '}

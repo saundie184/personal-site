@@ -5,9 +5,33 @@
     <atom:link href="http://saundie.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://saundie.com</link>
     <description>My personal site, blog, and portfolio.</description>
-    <pubDate>Mon, 29 Feb 2016 17:00:00 -0700</pubDate>
+    <pubDate>Fri, 04 Mar 2016 17:00:00 -0700</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Tips to help you debug</title>
+      <link>http://saundie.com/articles/debugging/</link>
+      <pubDate>Fri, 04 Mar 2016 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/debugging/</guid>
+      <author></author>
+      <description>&lt;p&gt;I’ve been coding now for almost six months, and I love it! Something I learned very quickly was that debugging is an essential part of development.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I often find myself in cycles of highs and lows. I can go from doing something incredible and being so proud of myself to breaking everything and watching my program crash. Then, I bang my head against the wall for a while. Eventually I solve the problem and begin to feel like I am on top of the world again!&lt;/p&gt;
+&lt;p&gt;My boyfriend has seen me go through this cycle many times, so I’ve decided to write down a couple questions that he can ask me when I’m stuck. Next time I’m banging my head against a wall, he can use this nifty list to help me trouble shoot.&lt;/p&gt;
+&lt;h6&gt;1. Are you looking at the right files?&lt;/h6&gt;
+
+&lt;p&gt;While this may sound simple, I can’t tell you how often I’m expecting something to work on the wrong file or I’m looking at the wrong port. I also need to check to make sure my files are in the correct directories and the paths are set properly.&lt;/p&gt;
+&lt;h6&gt;2. Have you required everything that you are using?&lt;/h6&gt;
+
+&lt;p&gt;A lot of times I have the correct code, but I don’t have the proper dependencies required. I’ve also caught myself requiring things in the wrong order so they overwrite each other or don’t load properly. Checking to make sure all the right dependencies (and the correct versions) definitely makes a difference in whether or not my code works.&lt;/p&gt;
+&lt;h6&gt;3. Are you using all the tools in the Inspector that you could be?&lt;/h6&gt;
+
+&lt;p&gt;By this point, this should be a no-brainer for me, but as with a lot things we do often, we some times forget the basics. Using Chrome Inspector Tools is super powerful. I don’t know how to program without them.&lt;/p&gt;
+&lt;h6&gt;4. Have you done any console logs?&lt;/h6&gt;
+
+&lt;p&gt;The answer to this one should be, “Yes, but I can do more”. Breaking down problems into smaller ones is how you solve the larger problems. In JavaScript, console logs can help you pinpoint where your code is not doing what you think it should. I’ve learned to integrate these into my normal practices, but it’s always a helpful reminder to do more!&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>public static main(String [] args)</title>
       <link>http://saundie.com/articles/java/</link>
