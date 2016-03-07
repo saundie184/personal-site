@@ -9,7 +9,7 @@ I've been coding now for almost six months, and I love it! Something I learned v
 
 <span class="more"></span>
 
-I often find myself in cycles of highs and lows. I can go from doing something incredible and being so proud of myself to breaking everything and watching my program crash. Then, I bang my head against the wall for a while. Eventually I solve it and begin to feel like I am on top of the world again!
+I often find myself in cycles of highs and lows. I can go from doing something incredible and being so proud of myself to breaking everything and watching my program crash. Then, I bang my head against the wall for a while. Eventually I solve the problem and begin to feel like I am on top of the world again!
 
 My boyfriend has seen me go through this cycle many times, so I've decided to write down a couple questions that he can ask me when I'm stuck. Next time I'm banging my head against a wall, he can use this nifty list to help me trouble shoot.
 
@@ -19,11 +19,11 @@ While this may sound simple, I can't tell you how often I'm expecting something 
 
 2. Have you required everything that you are using?
 
-A lot of times I have the correct code, but I don't have the proper dependencies required. I've also caught myself requiring things in the wrong order so they overwrite each other. Checking to make sure all the right dependencies (and the correct versions) definitely makes a difference in whether or not my code works.
+A lot of times I have the correct code, but I don't have the proper dependencies required. I've also caught myself requiring things in the wrong order so they overwrite each other or don't load properly. Checking to make sure all the right dependencies (and the correct versions) definitely makes a difference in whether or not my code works.
 
 3. Are you using all the tools in the Inspector that you could be?
 
-By this point, this should be a no-brainer for me, but as with a lot things we do often, we forget to do the basic things. Using Chrome Inspector Tools is super powerful. I don't know how to program without them.
+By this point, this should be a no-brainer for me, but as with a lot things we do often, we some times forget the basics. Using Chrome Inspector Tools is super powerful. I don't know how to program without them.
 
 4. Have you done any console logs?
 
