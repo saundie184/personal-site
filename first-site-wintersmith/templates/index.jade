@@ -4,6 +4,8 @@ block nav
   div.collapse.navbar-collapse
     ul.nav.navbar-nav.navbar-right
       li
+        a.btn.btn-simple(href=locals.url+'/images/Saundie%20Weiss%20Resume%20-%20Full%20Stack%20Developer.pdf') Resume
+      li
         a.btn.btn-simple(href=contents['portfolio.json'].url) Portfolio
       li
         a.btn.btn-simple(href=contents['blog.json'].url) Blog
@@ -29,5 +31,3 @@ block content
               i.fa.fa-linkedin.fa-2x
             a(href="mailto:saundieweiss@gmail.com").btn.btn-simple
               i.fa.fa-at.fa-2x
-            a(href=locals.url+'/images/Saundie%20Weiss%20Resume%20-%20Full%20Stack%20Developer.pdf').btn.btn-simple
-              i.fa.fa-file.fa-2x
