@@ -5,9 +5,22 @@
     <atom:link href="http://saundie.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://saundie.com</link>
     <description>My personal site, blog, and portfolio.</description>
-    <pubDate>Fri, 04 Mar 2016 17:00:00 -0700</pubDate>
+    <pubDate>Mon, 07 Mar 2016 17:00:00 -0700</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Here comes Ruby</title>
+      <link>http://saundie.com/articles/ruby/</link>
+      <pubDate>Mon, 07 Mar 2016 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://saundie.com/articles/ruby/</guid>
+      <author></author>
+      <description>&lt;p&gt;Programming is all about problem solving. Every day I work with something I haven’t seen before. Learning is second nature by now. I’m so glad my mother taught me how to look up things in a dictionary. Looking up “things” is something I do all the time now.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Today, we dove into Ruby. Ruby was the first programming language that I dabbled with almost a year ago. I don’t remember much of it, but even at that time, I had to teach myself how to use it.&lt;/p&gt;
+&lt;p&gt;For our project today, we were given a huge application that was built with Ruby on Rails. We had to fix several bugs and add a few new features. Since we had no context for it, there was a lot of “studying” I had to do in order to get oriented. Some of the syntax in Ruby looked familiar to me from JavaScript, but the overall structure of the files and the MVC was definitely different from what I was used to.&lt;/p&gt;
+&lt;p&gt;This was a fun exercise! Finding a bug in a program I knew nothing (or very little) about as cool. It was kind of like a treasure hunt. I still want to get my hands on more RoR, but this was a good intro.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Tips to help you debug</title>
       <link>http://saundie.com/articles/debugging/</link>
@@ -33,7 +46,7 @@
 </description>
     </item>
     <item>
-      <title>public static main(String [] args)</title>
+      <title>public static main (String [] args)</title>
       <link>http://saundie.com/articles/java/</link>
       <pubDate>Mon, 29 Feb 2016 17:00:00 -0700</pubDate>
       <guid isPermaLink="true">http://saundie.com/articles/java/</guid>
