@@ -5,7 +5,7 @@ date: 2016-04-01
 template: article.jade
 ---
 
-The Galvanize Full Stack Immersive Program concludes with a final capstone project. The entire time we've been in the program, we've heard about this project and how important it is for us. My emotions before we started were nervous/anxious, but also super excited.
+Every Galvanize Full Stack Immersive Program concludes with a final capstone project. The entire time we've been in the program, we've heard about this project and how important it is for us. My emotions before we started were nervous/anxious, but also super excited.
 
 <span class="more"></span>
 
