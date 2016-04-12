@@ -33,7 +33,7 @@ One of the first features I'd like to work on for HealthTrack is to make it a re
 
 <h6>Check it out</h6>
 
-Feel free to demo the application yourself. There are demo sign-in credentials on the homepage.
+Feel free to check out the application yourself. There are demo sign-in credentials on the homepage.
 
 [Visit site](https://healthtrack.online)
 
