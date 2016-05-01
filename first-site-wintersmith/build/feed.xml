@@ -14,7 +14,7 @@
       <pubDate>Thu, 31 Mar 2016 18:00:00 -0600</pubDate>
       <guid isPermaLink="true">http://saundie.com/articles/capstone/</guid>
       <author></author>
-      <description>&lt;p&gt;The Galvanize Full Stack Immersive Program concludes with a final capstone project. The entire time we’ve been in the program, we’ve heard about this project and how important it is for us. My emotions before we started were nervous/anxious, but also super excited.&lt;/p&gt;
+      <description>&lt;p&gt;Every Galvanize Full Stack Immersive Program concludes with a final capstone project. The entire time we’ve been in the program, we’ve heard about this project and how important it is for us. My emotions before we started were nervous/anxious, but also super excited.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;I wanted to choose a project that would be meaningful to me, but also something that other people could relate to and find useful. I chose to build a family medical history tracker. The purpose of my application is to help families keep track of their health history. It will help families have better conversations with each other and with their doctors about health history.&lt;/p&gt;
 &lt;h6&gt;Overview&lt;/h6&gt;
@@ -32,7 +32,7 @@
 &lt;p&gt;One of the first features I’d like to work on for HealthTrack is to make it a responsive site. Unfortunately, it only looks good on a desktop. Stay tuned!&lt;/p&gt;
 &lt;h6&gt;Check it out&lt;/h6&gt;
 
-&lt;p&gt;Feel free to demo it yourself. There are demo sign-in credentials on the homepage.&lt;/p&gt;
+&lt;p&gt;Feel free to check out the application yourself. There are demo sign-in credentials on the homepage.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://healthtrack.online&quot;&gt;Visit site&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/saundie184/health-track&quot;&gt;View code on Github&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href='https://healthtrack.online'&gt; &lt;img src=&quot;HealthTrack-img.png&quot; alt=&quot;HealthTrack homepage&quot; style=&quot;width: 400px; text-align=center&quot;/&gt; &lt;/a&gt;&lt;/p&gt;
